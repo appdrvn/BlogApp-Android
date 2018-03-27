@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:layout_weight="0"
+    app:contentInsetStart="0dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <!-- xmlns:text="http://schemas.android.com/apk/res/com.vynsoft.bcas"-->
+
+        <FrameLayout
+            android:id="@+id/action_bar_left_icon_layout"
+            style="@style/toolbar_icon_layout">
+
+            <ImageView
+                android:id="@+id/action_bar_left_icon"
+                style="@style/toolbar_icon" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/action_bar_title_text"
+            style="@style/toolbar_title" />
+
+        <FrameLayout
+            android:id="@+id/action_bar_right_icon_layout"
+            style="@style/toolbar_icon_layout">
+
+            <ImageView
+                android:id="@+id/action_bar_right_icon"
+                style="@style/toolbar_icon" />
+        </FrameLayout>
+    </LinearLayout>
+</android.support.v7.widget.Toolbar>

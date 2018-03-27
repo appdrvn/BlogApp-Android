@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorAccent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_splash_blur" />
+
+    <TextView
+        android:id="@+id/login"
+        style="@style/login_page_white_text_button"
+        android:text="@string/login" />
+
+    <TextView
+        android:id="@+id/terms_n_conditions"
+        style="@style/login_page_white_text_button"
+        android:layout_alignParentRight="true"
+        android:text="@string/terms_n_conditions" />
+
+    <TextView
+        android:id="@+id/register"
+        style="@style/button.color_primary"
+        android:layout_above="@id/terms_n_conditions"
+        android:layout_centerHorizontal="true"
+        android:text="@string/register" />
+
+    <LinearLayout
+        android:id="@+id/form_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/username"
+            style="@style/form_element"
+            android:background="@color/transparent"
+            android:layout_marginBottom="@dimen/activity_margin"
+            android:drawableLeft="@drawable/ic_username"
+            android:hint="@string/username" />
+
+        <View style="@style/div"/>
+
+        <EditText
+            android:layout_marginTop="@dimen/activity_margin"
+            android:id="@+id/email"
+            android:inputType="textEmailAddress"
+            style="@style/form_element"
+            android:background="@color/transparent"
+            android:layout_marginBottom="@dimen/activity_margin"
+            android:drawableLeft="@drawable/ic_email_white"
+            android:hint="@string/email" />
+        <View style="@style/div"/>
+
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_marginTop="@dimen/activity_margin"
+            style="@style/form_element"
+            android:background="@color/transparent"
+            android:layout_marginBottom="@dimen/activity_margin"
+            android:drawableLeft="@drawable/ic_password"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatTextView
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="12sp"
+        app:autoSizeMaxTextSize="120sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/form_layout"
+        android:gravity="center"
+        android:fontFamily="sans-serif-thin"
+        android:textColor="@color/white"
+        android:text="@string/join_us"
+        android:maxWidth="@dimen/button_width"
+        android:minWidth="@dimen/button_width"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

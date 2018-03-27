@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/edit_profile"
+            android:text="@string/edit_profile"
+            style="@style/more_element"/>
+
+        <View style="@style/div" />
+        <TextView
+            android:id="@+id/change_password"
+            android:text="@string/change_password"
+            style="@style/more_element"/>
+
+        <View style="@style/div" />
+
+        <TextView
+            android:id="@+id/about_us"
+            android:text="@string/about_us"
+            style="@style/more_element"/>
+
+        <View style="@style/div" />
+        <TextView
+            android:id="@+id/logout"
+            android:background="@drawable/ripple_button_bg_red"
+            android:textColor="@color/white"
+            android:text="@string/logout"
+            android:drawableRight="@drawable/ic_logout"
+            style="@style/more_element"/>
+
+        <View style="@style/div" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@color/semi_white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_height">
+
+        <ImageView
+            android:padding="@dimen/three_quarter_activity_margin"
+            android:id="@+id/tab_profile"
+            android:layout_width="0dp"
+            android:background="@drawable/ripple_button_bg_transparent_black_mask"
+            android:src="@drawable/ic_profile_selector"
+            android:layout_weight="1"
+            android:layout_height="@dimen/tab_height" />
+        <ImageView
+            android:padding="@dimen/three_quarter_activity_margin"
+            android:id="@+id/tab_home"
+            android:layout_width="0dp"
+            android:background="@drawable/ripple_button_bg_transparent_black_mask"
+            android:src="@drawable/ic_home_selector"
+            android:layout_weight="1"
+            android:layout_height="@dimen/tab_height" />
+        <ImageView
+            android:padding="@dimen/three_quarter_activity_margin"
+            android:id="@+id/tab_more"
+            android:background="@drawable/ripple_button_bg_transparent_black_mask"
+            android:src="@drawable/ic_more_selector"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/tab_height" />
+
+    </LinearLayout>
+
+</LinearLayout>

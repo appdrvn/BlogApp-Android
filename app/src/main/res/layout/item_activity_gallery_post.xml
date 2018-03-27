@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_margin">
+
+    <ImageView
+        android:id="@+id/like_icon"
+        android:layout_width="@dimen/double_activity_margin"
+        android:layout_height="@dimen/double_activity_margin"
+        android:src="@drawable/ic_activity_gallery" />
+
+    <com.appdrvn.blogapp.widgets.RoundedCornerLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginLeft="@dimen/activity_margin"
+        android:layout_toRightOf="@id/like_icon"
+        android:background="@color/extra_light_grey">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+
+                android:id="@+id/thumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:background="@drawable/scrim"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <!--todo:remove dummy text-->
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/thumbnail"
+                    android:layout_below="@id/date"
+                    android:layout_marginBottom="@dimen/half_activity_margin"
+                    android:layout_marginLeft="@dimen/half_activity_margin"
+                    android:layout_marginRight="@dimen/half_activity_margin"
+                    android:layout_marginTop="@dimen/quarter_activity_margin"
+                    android:layout_toRightOf="@id/thumbnail"
+                    android:ellipsize="end"
+                    android:gravity="bottom"
+                    android:maxLines="3"
+                    android:text="Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porttitor consectetur mauris, nec imperdiet dolor venenatis quis."
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/small_text_1" />
+                <!--todo:remove dummy text-->
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:layout_margin="@dimen/half_activity_margin"
+                    android:drawableLeft="@drawable/ic_clock"
+                    android:drawablePadding="@dimen/half_activity_margin"
+                    android:gravity="center_vertical|right"
+                    android:text="20m Ago"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/small_text_3" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </com.appdrvn.blogapp.widgets.RoundedCornerLayout>
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/content_layout"
+        android:layout_alignLeft="@id/like_icon"
+        android:layout_below="@id/like_icon"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="@dimen/half_activity_margin"
+        android:background="@color/extra_light_grey" />
+
+</RelativeLayout>

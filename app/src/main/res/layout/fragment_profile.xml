@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                app:layout_scrollFlags="exitUntilCollapsed|scroll"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/profile_picture"
+                    android:layout_width="match_parent"
+                    android:layout_alignBottom="@+id/info_layout"
+                    android:layout_alignTop="@+id/info_layout"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:id="@id/info_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary_30"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_margin"
+                        android:layout_marginRight="@dimen/activity_margin"
+                        android:layout_marginTop="@dimen/activity_margin"
+                        android:gravity="center_horizontal"
+                        android:text="Kelvyn Hadley"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/large_text_10"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="@dimen/activity_margin"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_margin"
+                        android:layout_marginLeft="@dimen/activity_margin"
+                        android:layout_marginRight="@dimen/activity_margin">
+
+
+                        <TextView
+                            android:layout_toLeftOf="@+id/div"
+                            android:gravity="center"
+                            android:layout_alignParentLeft="true"
+                            android:id="@+id/post_count"
+                            android:fontFamily="sans-serif-thin"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/large_text_30"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_margin"
+                            android:layout_marginRight="@dimen/half_activity_margin"
+                            android:layout_marginLeft="@dimen/half_activity_margin" />
+
+                        <TextView
+                            android:gravity="center"
+                            android:layout_toLeftOf="@id/div"
+                            android:layout_alignParentLeft="true"
+                            android:layout_below="@id/post_count"
+                            android:textAllCaps="true"
+                            android:textSize="@dimen/regular_text"
+                            android:text="@string/posts"
+                            android:fontFamily="sans-serif-light"
+                            android:textColor="@color/white"
+                            android:id="@+id/post_count_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="@dimen/activity_margin"
+                            android:layout_marginTop="@dimen/activity_margin"
+                            android:layout_marginLeft="@dimen/activity_margin"
+                            android:layout_marginRight="@dimen/activity_margin" />
+
+                        <TextView
+                            android:layout_toRightOf="@id/div"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center"
+                            android:id="@+id/comments_count"
+                            android:fontFamily="sans-serif-thin"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/large_text_30"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/half_activity_margin"
+                            android:layout_marginLeft="@dimen/half_activity_margin"
+                            android:layout_marginTop="@dimen/activity_margin" />
+
+                        <TextView
+                            android:layout_toRightOf="@id/div"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center"
+                            android:layout_below="@id/comments_count"
+                            android:textAllCaps="true"
+                            android:textSize="@dimen/regular_text"
+                            android:text="@string/comments"
+                            android:fontFamily="sans-serif-light"
+                            android:textColor="@color/white"
+                            android:id="@+id/comments_count_label"
+                            android:layout_width="wrap_content"
+                            android:paddingBottom="@dimen/activity_margin"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/activity_margin"
+                            android:layout_marginTop="@dimen/activity_margin"
+                            android:layout_marginLeft="@dimen/activity_margin" />
+
+                        <View
+                            android:layout_centerHorizontal="true"
+                            android:id="@id/div"
+                            android:background="@color/white"
+                            android:layout_width="1dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignBottom="@id/comments_count_label"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+                <TextView
+                    android:fontFamily="sans-serif-light"
+                    android:layout_below="@id/info_layout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/activity_margin"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/large_text_7"
+                    android:id="@+id/activity_timeline"
+                    android:text="@string/activity_timeline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_below="@id/activity_timeline"
+                    android:layout_alignLeft="@id/activity_timeline"
+                    android:layout_alignRight="@id/activity_timeline"
+                    android:layout_marginTop="@dimen/quarter_activity_margin"
+                    android:layout_marginRight="@dimen/activity_margin"
+                    android:layout_marginLeft="@dimen/activity_margin"
+                    android:layout_marginBottom="@dimen/activity_margin"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"/>
+
+            </RelativeLayout>
+
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>

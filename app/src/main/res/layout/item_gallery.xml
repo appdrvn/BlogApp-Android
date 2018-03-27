@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/ripple_button_bg_transparent_black_mask"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="236dp"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/thumbnail"
+        android:layout_alignTop="@id/thumbnail"
+        android:background="@drawable/scrim"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_margin">
+        <!--Todo: remove dummy text-->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/triple_activity_margin"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet placerat libero. Nullam sed imperdiet orci, a laoreet massa. Vestibulum et ornare erat. In non volutpat diam. Nulla eget turpis congue erat aliquet rhoncus ac pellentesque nulla. Sed vitae felis in lacus consequat vestibulum. Aliquam erat volutpat."
+            android:textColor="@color/white"
+            android:textSize="@dimen/large_text_2"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/half_activity_margin"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/datetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginRight="@dimen/activity_margin"
+                android:layout_weight="0"
+                android:drawablePadding="@dimen/half_activity_margin"
+                android:drawableStart="@drawable/ic_clock"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_text_2" />
+
+            <TextView
+                android:id="@+id/author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/half_activity_margin"
+                android:drawableStart="@drawable/ic_author"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-medium"
+                android:lines="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_text_2" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        style="@style/div"
+        android:layout_height="@dimen/quarter_activity_margin"
+        android:layout_below="@id/thumbnail" />
+
+
+</RelativeLayout>

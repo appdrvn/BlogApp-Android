@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_splash" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary_30">
+
+        <TextView
+            android:id="@+id/register"
+            style="@style/login_page_white_text_button"
+            android:text="@string/register" />
+
+        <TextView
+            android:id="@+id/forgot_password"
+            style="@style/login_page_white_text_button"
+            android:layout_alignParentRight="true"
+            android:text="@string/forgot_password" />
+
+        <TextView
+            android:id="@+id/login"
+            style="@style/button.color_primary"
+            android:layout_above="@id/register"
+            android:layout_centerHorizontal="true"
+            android:text="@string/login" />
+
+        <EditText
+            android:id="@+id/password"
+            style="@style/form_element"
+            android:layout_above="@id/login"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/activity_margin"
+            android:drawableLeft="@drawable/ic_password"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/username"
+            style="@style/form_element"
+            android:layout_above="@id/password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/activity_margin"
+            android:drawableLeft="@drawable/ic_username"
+            android:hint="@string/username" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/username"
+            android:layout_alignLeft="@id/username"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@id/username"
+            android:fontFamily="sans-serif-thin"
+            android:lines="1"
+            android:gravity="center"
+            android:text="@string/greetings"
+            android:textColor="@color/white"
+            app:autoSizeMaxTextSize="120sp"
+            app:autoSizeMinTextSize="12sp"
+            app:autoSizeTextType="uniform" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

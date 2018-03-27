@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/profile_picture"
+        style="@style/details_element"
+        android:layout_width="@dimen/small_thumbnail_size_2"
+        android:layout_height="@dimen/small_thumbnail_size_2"
+        android:layout_marginBottom="@dimen/activity_margin"
+        android:background="@drawable/circle_grey" />
+
+    <!--<TextView-->
+        <!--android:layout_alignTop="@id/profile_picture"-->
+        <!--android:layout_alignBottom="@id/profile_picture"-->
+        <!--android:textColor="@color/black"-->
+        <!--android:drawableLeft="@drawable/ic_like_grey"-->
+        <!--android:id="@+id/like_count"-->
+        <!--android:text="7"-->
+        <!--android:drawablePadding="@dimen/half_activity_margin"-->
+        <!--android:layout_marginRight="@dimen/activity_margin"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:textSize="@dimen/regular_text"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+
+    <TextView
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/profile_picture"
+        android:layout_alignBottom="@id/profile_picture"
+        android:textColor="@color/text_light_grey"
+        android:drawableLeft="@drawable/ic_clock"
+        android:drawablePadding="@dimen/half_activity_margin"
+        android:id="@+id/datetime"
+        android:layout_marginRight="@dimen/activity_margin"
+        android:textSize="@dimen/small_text_3"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_marginRight="@dimen/activity_margin"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="@dimen/regular_text"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:layout_alignBottom="@id/profile_picture"
+        android:layout_alignTop="@id/profile_picture"
+        android:layout_toLeftOf="@id/datetime"
+        android:layout_toRightOf="@id/profile_picture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textStyle="italic"
+        android:id="@+id/comment"
+        android:layout_marginRight="@dimen/activity_margin"
+        android:gravity="center_vertical"
+        android:layout_below="@id/profile_picture"
+        android:layout_alignLeft="@id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:id="@+id/div"
+        android:layout_marginTop="@dimen/activity_margin"
+        android:layout_below="@id/comment"
+        android:background="@color/light_grey"
+        android:layout_marginRight="@dimen/half_activity_margin"
+        android:layout_marginLeft="@dimen/half_activity_margin"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/light_grey"
+    android:layout_height="wrap_content">
+
+    <!--todo:remove dummy text-->
+    <TextView
+        android:id="@+id/more_comments"
+        android:layout_gravity="center"
+        android:padding="@dimen/activity_margin"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/large_text_2"
+        android:drawablePadding="@dimen/activity_margin"
+        android:fontFamily="sans-serif-medium"
+        android:drawableRight="@drawable/ic_right"
+        android:text="More Comments (17)"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="quarter_activity_margin">4dp</dimen>
+    <dimen name="half_activity_margin">8dp</dimen>
+    <dimen name="three_quarter_activity_margin">12dp</dimen>
+    <dimen name="activity_margin">16dp</dimen>
+    <dimen name="one_half_activity_margin">24dp</dimen>
+    <dimen name="tab_height">52dp</dimen>
+
+    <dimen name="large_text_2">17sp</dimen>
+    <dimen name="large_text_1">16sp</dimen>
+    <dimen name="regular_text">15sp</dimen>
+    <dimen name="small_text_1">14sp</dimen>
+    <dimen name="small_text_2">13sp</dimen>
+    <dimen name="small_text_3">12sp</dimen>
+    <dimen name="small_text_4">11sp</dimen>
+    <dimen name="small_text_5">10sp</dimen>
+    <dimen name="small_text_6">9sp</dimen>
+    <dimen name="thumbnail_size">120dp</dimen>
+    <dimen name="thumbnail_width">90dp</dimen>
+    <dimen name="small_thumbnail_size">60dp</dimen>
+    <dimen name="double_activity_margin">32dp</dimen>
+    <dimen name="large_text_7">22sp</dimen>
+    <dimen name="large_text_10">25sp</dimen>
+    <dimen name="large_text_20">35sp</dimen>
+    <dimen name="large_text_30">45sp</dimen>
+    <dimen name="button_width">300dp</dimen>
+    <dimen name="tab_offset">68dp</dimen>
+    <dimen name="triple_activity_margin">48dp</dimen>
+    <dimen name="comment_button_size">45dp</dimen>
+    <dimen name="small_thumbnail_size_2">45dp</dimen>
+    <dimen name="dialog_size">300dp</dimen>
+    <dimen name="text_area_height">120dp</dimen>
+</resources>

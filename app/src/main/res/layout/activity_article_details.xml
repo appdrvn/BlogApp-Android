@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/tab_height">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/thumbnail"
+                    android:layout_width="match_parent"
+                    android:layout_height="236dp"
+                    android:scaleType="centerCrop" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/thumbnail"
+                    android:layout_alignTop="@id/thumbnail"
+                    android:background="@color/semi_black_60"
+                    android:gravity="bottom"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/activity_margin"
+                    android:paddingLeft="@dimen/activity_margin"
+                    android:paddingRight="@dimen/activity_margin"
+                    android:paddingTop="@dimen/activity_margin">
+
+                    <TextView
+                        android:id="@+id/author"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:drawableLeft="@drawable/ic_author"
+                        android:drawablePadding="@dimen/half_activity_margin"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/small_text_2" />
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:drawableLeft="@drawable/ic_clock"
+                        android:drawablePadding="@dimen/half_activity_margin"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/small_text_2" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/details_element"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/large_text_20" />
+
+            <TextView
+                android:id="@+id/description_emphasize"
+                style="@style/details_element"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/left_line_black"
+                android:fontFamily="sans-serif-light"
+                android:paddingLeft="@dimen/activity_margin"
+                android:textColor="@color/text_grey"
+                android:textSize="@dimen/large_text_2" />
+
+            <TextView
+                android:id="@+id/description"
+                style="@style/details_element"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_grey"
+                android:textSize="@dimen/regular_text" />
+
+
+            <!--<include layout="@layout/layout_comment_and_share"/>-->
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_margin" />
+
+            <include layout="@layout/layout_more_comments" />
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <include layout="@layout/layout_toolbar_double_icon_transparent" />
+
+    <include
+        android:id="@+id/comment_input_layout"
+        layout="@layout/layout_comment_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <View
+        style="@style/div"
+        android:layout_above="@id/comment_input_layout"/>
+
+</RelativeLayout>

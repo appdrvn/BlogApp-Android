@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_margin">
+
+    <ImageView
+        android:id="@+id/like_icon"
+        android:layout_width="@dimen/double_activity_margin"
+        android:layout_height="@dimen/double_activity_margin"
+        android:src="@drawable/ic_comment" />
+
+
+    <RelativeLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_margin"
+        android:layout_toRightOf="@id/like_icon"
+        android:background="@drawable/rounded_corner_grey">
+
+        <!--todo:remove dummy text-->
+        <TextView
+            android:layout_marginRight="@dimen/half_activity_margin"
+            android:layout_marginTop="@dimen/half_activity_margin"
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/ic_clock"
+            android:drawablePadding="@dimen/half_activity_margin"
+            android:gravity="center_vertical"
+            android:text="20m Ago"
+            android:textColor="@color/text_light_grey"
+            android:textSize="@dimen/small_text_3" />
+
+        <!--todo:remove dummy text-->
+        <TextView
+            android:layout_marginLeft="@dimen/half_activity_margin"
+            android:layout_marginTop="@dimen/half_activity_margin"
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/date"
+            android:text="Lydia McClure"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/small_text_1"
+            android:textStyle="bold" />
+        <!--todo:remove dummy text-->
+        <TextView
+            android:layout_marginRight="@dimen/half_activity_margin"
+            android:layout_marginLeft="@dimen/half_activity_margin"
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_marginTop="@dimen/quarter_activity_margin"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porttitor consectetur mauris, nec imperdiet dolor venenatis quis."
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_text_1" />
+        <!--todo:remove dummy text-->
+        <TextView
+            android:background="@drawable/rounded_corner_bottom_dark_grey"
+            android:paddingBottom="@dimen/half_activity_margin"
+            android:paddingTop="@dimen/half_activity_margin"
+            android:paddingLeft="@dimen/half_activity_margin"
+            android:paddingRight="@dimen/half_activity_margin"
+            android:id="@+id/comment"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginTop="@dimen/quarter_activity_margin"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porttitor consectetur mauris, nec imperdiet dolor venenatis quis."
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_text_3" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/content_layout"
+        android:layout_alignLeft="@id/like_icon"
+        android:layout_below="@id/like_icon"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="@dimen/half_activity_margin"
+        android:background="@color/extra_light_grey" />
+
+</RelativeLayout>

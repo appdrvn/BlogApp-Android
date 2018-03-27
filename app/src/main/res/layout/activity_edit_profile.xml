@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/profile_picture"
+                android:layout_width="@dimen/thumbnail_size"
+                android:layout_height="@dimen/thumbnail_size"
+                android:layout_marginTop="@dimen/double_activity_margin"
+                android:src="@drawable/ic_profile_picture_placeholder" />
+
+            <TextView
+                android:id="@+id/edit_profile_picture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/half_activity_margin"
+                android:fontFamily="sans-serif-thin"
+                android:text="@string/edit_profile_picture"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_text_1" />
+
+
+            <EditText
+                android:id="@+id/username"
+                style="@style/form_element"
+                android:layout_marginBottom="@dimen/activity_margin"
+                android:layout_marginTop="@dimen/activity_margin"
+                android:background="@color/transparent"
+                android:drawableLeft="@drawable/ic_username_black"
+                android:hint="@string/username"
+                android:textColor="@color/black" />
+
+            <View style="@style/div.edit_profile" />
+
+            <EditText
+                android:id="@+id/email"
+                style="@style/form_element"
+                android:layout_marginBottom="@dimen/activity_margin"
+                android:layout_marginTop="@dimen/activity_margin"
+                android:background="@color/transparent"
+                android:drawableLeft="@drawable/ic_email_black"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black" />
+
+            <View style="@style/div" />
+
+
+            <EditText
+                android:id="@+id/password"
+                style="@style/form_element"
+                android:layout_marginBottom="@dimen/activity_margin"
+                android:layout_marginTop="@dimen/activity_margin"
+                android:background="@color/transparent"
+                android:drawableLeft="@drawable/ic_password_black"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:id="@+id/submit"
+                style="@style/button.color_primary"
+                android:layout_marginTop="@dimen/activity_margin"
+                android:text="@string/submit" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

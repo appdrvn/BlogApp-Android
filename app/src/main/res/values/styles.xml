@@ -1,0 +1,151 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorHint">@color/semi_white</item>
+    </style>
+
+    <style name="toolbar_title">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/large_text_2</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:lines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="toolbar_icon">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:padding">@dimen/half_activity_margin</item>
+    </style>
+
+    <style name="toolbar_icon_layout">
+        <item name="android:background">@drawable/ripple_button_bg_transparent</item>
+        <item name="android:layout_width">?attr/actionBarSize</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">0</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+    <style name="dialog_fragment">
+        <item name="android:windowEnterAnimation">@anim/enter</item>
+        <item name="android:windowExitAnimation">@anim/exit_down</item>
+    </style>
+
+    <style name="dialog_element">
+        <item name="android:layout_marginTop">@dimen/half_activity_margin</item>
+        <item name="android:layout_marginLeft">@dimen/half_activity_margin</item>
+        <item name="android:layout_marginRight">@dimen/half_activity_margin</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/regular_text</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="div">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/light_grey</item>
+    </style>
+
+    <style name="details_element">
+        <item name="android:layout_marginTop">@dimen/activity_margin</item>
+        <item name="android:layout_marginLeft">@dimen/activity_margin</item>
+        <item name="android:layout_marginRight">@dimen/activity_margin</item>
+    </style>
+
+    <style name="about_references_title">
+        <item name="android:autoLink">all</item>
+        <item name="android:textSize">@dimen/small_text_1</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">@dimen/activity_margin</item>
+        <item name="android:layout_marginLeft">@dimen/activity_margin</item>
+        <item name="android:layout_marginRight">@dimen/activity_margin</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="about_references_subtitle">
+        <item name="android:autoLink">all</item>
+        <item name="android:textSize">@dimen/small_text_1</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginTop">@dimen/half_activity_margin</item>
+        <item name="android:layout_marginBottom">@dimen/activity_margin</item>
+        <item name="android:layout_marginLeft">@dimen/activity_margin</item>
+        <item name="android:layout_marginRight">@dimen/activity_margin</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="about_references_layout">
+        <item name="android:layout_marginBottom">@dimen/half_activity_margin</item>
+        <item name="android:background">@color/light_grey</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="more_element">
+        <item name="android:background">@drawable/ripple_button_bg_transparent_black_mask</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawableRight">@drawable/ic_right</item>
+        <item name="android:padding">@dimen/activity_margin</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/large_text_2</item>
+    </style>
+
+    <style name="login_page_white_text_button">
+        <item name="android:layout_marginTop">@dimen/activity_margin</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:background">@drawable/ripple_button_bg_transparent_black_mask</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/small_text_2</item>
+        <item name="android:padding">@dimen/activity_margin</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="button.color_primary">
+        <item name="android:background">@drawable/rounded_side_color_primary</item>
+
+    </style>
+
+    <style name="form_element">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/rounded_side_semi_black</item>
+        <item name="android:drawablePadding">@dimen/activity_margin</item>
+        <item name="android:textSize">@dimen/regular_text</item>
+        <item name="android:textColorHint">@color/text_light_grey</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingLeft">@dimen/activity_margin</item>
+        <item name="android:paddingRight">@dimen/activity_margin</item>
+        <item name="android:paddingTop">@dimen/three_quarter_activity_margin</item>
+        <item name="android:paddingBottom">@dimen/three_quarter_activity_margin</item>
+        <item name="android:maxWidth">@dimen/button_width</item>
+        <item name="android:minWidth">@dimen/button_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+    <style name="button" parent="form_element">
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="div.edit_profile"></style>
+
+    <style name="EditTextHint" parent="TextAppearance.AppCompat">
+        <item name="colorAccent">@color/black</item>
+        <item name="android:textColorHint">@color/text_light_grey</item>
+
+    </style>
+</resources>
