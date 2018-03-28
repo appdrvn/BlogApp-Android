@@ -46,7 +46,7 @@ public class MoreFragment extends DefaultFragment {
     View.OnClickListener logoutClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            Intent intent = new Intent(getActivity(), LoginActivity.class);
+            Intent intent = LoginActivity.newInstance(getActivity());
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(intent);
 
@@ -68,7 +68,7 @@ public class MoreFragment extends DefaultFragment {
     View.OnClickListener editProfileClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            startActivity(new Intent(getActivity(), EditProfileActivity.class));
+            startActivity(EditProfileActivity.newInstance(getActivity()));
 
         }
     };

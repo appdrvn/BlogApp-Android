@@ -13,6 +13,7 @@ import com.appdrvn.blogapp.R;
 import com.appdrvn.blogapp.delegates.GlideApp;
 import com.appdrvn.blogapp.delegates.UtilityFunctions;
 import com.appdrvn.blogapp.models.ArticleObject;
+import com.appdrvn.blogapp.models.CommentObject;
 import com.appdrvn.blogapp.models.ContentObject;
 
 import java.util.ArrayList;
@@ -112,6 +113,12 @@ public class ContentsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         this.data.clear();
         this.data.addAll(data);
         notifyDataSetChanged();
+    }
+
+    public void add(ArrayList<ContentObject> data) {
+        int startIndex = this.data.size();
+        this.data.addAll(data);
+        notifyItemRangeInserted(startIndex, data.size());
     }
 
     class ArticleViewHolder extends RecyclerView.ViewHolder {

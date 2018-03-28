@@ -1,5 +1,6 @@
 package com.appdrvn.blogapp.activities;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -15,6 +16,11 @@ import com.appdrvn.blogapp.widgets.DefaultActivity;
 
 public class LoginActivity extends DefaultActivity {
 
+    public static Intent newInstance(Context context){
+        Intent intent = new Intent(context, LoginActivity.class);
+        return intent;
+    }
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,7 +34,7 @@ public class LoginActivity extends DefaultActivity {
     View.OnClickListener loginClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+            Intent intent = MainActivity.newInstance(LoginActivity.this);
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(intent);
 
@@ -37,7 +43,7 @@ public class LoginActivity extends DefaultActivity {
     View.OnClickListener registerClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
+            startActivity(RegisterActivity.newInstance(LoginActivity.this));
         }
     };
     View.OnClickListener forgotPasswordClickListener = new View.OnClickListener() {

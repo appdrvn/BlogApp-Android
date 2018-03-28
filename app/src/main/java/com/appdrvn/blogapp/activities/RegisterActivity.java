@@ -1,5 +1,6 @@
 package com.appdrvn.blogapp.activities;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -15,6 +16,12 @@ import com.appdrvn.blogapp.widgets.WebViewControlActivity;
 
 public class RegisterActivity extends DefaultActivity {
 
+
+    public static Intent newInstance(Context context){
+        Intent intent = new Intent(context, RegisterActivity.class);
+        return intent;
+    }
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,7 +36,7 @@ public class RegisterActivity extends DefaultActivity {
     View.OnClickListener registerClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
+            Intent intent = MainActivity.newInstance(RegisterActivity.this);
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(intent);
         }

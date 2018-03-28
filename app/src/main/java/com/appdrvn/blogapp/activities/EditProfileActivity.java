@@ -1,6 +1,8 @@
 package com.appdrvn.blogapp.activities;
 
+import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
@@ -14,6 +16,11 @@ import com.appdrvn.blogapp.widgets.DefaultActivity;
  */
 
 public class EditProfileActivity extends DefaultActivity {
+
+    public static Intent newInstance(Context context){
+        Intent intent = new Intent(context, EditProfileActivity.class);
+        return intent;
+    }
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

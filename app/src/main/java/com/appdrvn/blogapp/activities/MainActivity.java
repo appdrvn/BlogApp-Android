@@ -1,5 +1,7 @@
 package com.appdrvn.blogapp.activities;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentManager;
@@ -24,6 +26,12 @@ public class MainActivity extends DefaultActivity {
     View vHomeTab;
     View vProfileTab;
     View vMoreTab;
+
+
+    public static Intent newInstance(Context context){
+        Intent intent = new Intent(context, MainActivity.class);
+        return intent;
+    }
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

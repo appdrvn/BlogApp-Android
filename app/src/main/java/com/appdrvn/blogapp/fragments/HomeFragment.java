@@ -49,7 +49,7 @@ public class HomeFragment extends DefaultListFragment {
         adapter.setItemClickListener(itemClickListener);
         mSwipeRefreshLayout.setOnRefreshListener(refreshListener);
 
-        loadData();
+        setupLoadMore();
 
         return rootView;
     }

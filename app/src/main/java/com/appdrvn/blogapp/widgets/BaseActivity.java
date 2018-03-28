@@ -52,9 +52,6 @@ public class BaseActivity extends AppCompatActivity {
     public void appResumed() {
     }
 
-    public void continueAction() {
-
-    }
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
