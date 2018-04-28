@@ -1,8 +1,9 @@
-## BlogApp Template Android[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+## BlogApp Template Android [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![Blogging Template iOS](https://appdrvn.blob.core.windows.net/a1b84c0f-dac1-4b57-b657-2790410fdc24/0000032_blog-template-android.jpeg "Blogging Template iOS") 
 
 ## Introduction
 
-BlogApp Template Template is based on a blog viewing app. The app consists of main list page, user profile with activity timeline, login page, register page, edit profile page, article details page, and gallery page. 
+Blog template is based on a blogging app. The app consists of main list page, user profile with activity timeline, login page, register page, edit profile page, article details page, and gallery page. 
 
 The main objective of this template is to assist startups to build their mobile application faster and easier. 
 
@@ -407,7 +408,7 @@ BlogApp
 
 ## Useful Links
 
-Appdrvn official website - http://www.appdrvn.com/ 
+Appdrvn official website - http://appdrvn.com/ 
 
 Appdrvn official facebook page - https://www.facebook.com/appdrvn/ 
 
